@@ -1,2 +1,3 @@
-console.log('Guerre!');
-// We don't need this file yet :)
+import Game from './game';
+
+window.game = new Game();
