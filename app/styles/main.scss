@@ -1,8 +1,100 @@
 // This is the top-level SCSS file
 // Add styles here/import files that you'd like to use
 
-.greeting {
+/*.greeting {
   font-family: sans-serif;
   font-weight: 300;
+}*/
+
+.container {
+	margin: 10px;
 }
 
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col-2 {
+  float: left;
+  width: 16.66%;
+}
+
+.row .col-3 {
+  float: left;
+  width: 25%;
+}
+
+.row .col-4 {
+	float: left;
+	width: 33.33%;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+}
+
+.row .col-offset-3 {
+  position: relative;
+  left: 25%;
+}
+
+.card {
+  border: 1px solid black;
+  width: 150px;
+  height: 200px;
+  position: relative;
+}
+
+.card--face-up {}
+
+.card .card__rank {
+  position: absolute;
+}
+
+.card .card__rank--top {
+  top: 5px;
+  left: 5px;
+}
+
+.card .card__rank--bottom {
+  bottom: 5px;
+  right: 5px;
+  transform: rotate(-180deg);
+}
+
+.card .card__suit {
+  position: absolute;
+}
+
+.card .card__suit--top {
+  top: 20px;
+  left: 5px;
+}
+
+.card .card__suit--bottom {
+  bottom: 20px;
+  right: 5px;
+  transform: rotate(-180deg);
+}
+
+.card .card__logo {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+}

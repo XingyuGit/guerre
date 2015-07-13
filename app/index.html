@@ -30,37 +30,69 @@
     <!-- Main Content Below -->
 
     <!-- <h1 class="greeting">Add markup here!</h1> -->
-    <h1>WAR (Guerre)</h1>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <h3>ROUND</h3>
+          <p>10</p>
+        </div>
 
-    <div>
-      <h3>ROUND</h3>
-      <p>10</p>
-    </div>
+        <h1 class="col-6 center">WAR (Guerre)</h1>
 
-    <div>
-      <h3>SCORE</h3>
-      <p>PLAYER 1: 28</p>
-      <p>PLAYER 2: 24</p>
-    </div>
-
-    <div id="player1">
-      <div class="face-up-card">
-        
+        <div class="col-3 right">
+          <h3>SCORE</h3>
+          <p>PLAYER 1: 28</p>
+          <p>PLAYER 2: 24</p>
+        </div>
       </div>
-      <div class="face-down-card">
-        
+
+      <div id="player1" class="row">
+        <div class="col-offset-3">
+          <div class="col-2">
+            <div class="card card--face-down">
+              <img src="https://raw.githubusercontent.com/aaronpanch/guerre/master/app/images/logo_dark.png" class="card__logo" />
+            </div>
+          </div>
+
+          <div class="col-2">
+            <div class="card card--face-up">
+              <div class="card__rank card__rank--top">A</div>
+              <div class="card__suit card__suit--top">&diams;</div>
+              <img src="https://raw.githubusercontent.com/aaronpanch/guerre/master/app/images/logo_light.png" class="card__logo" />
+              <div class="card__rank card__suit--bottom">&diams;</div>
+              <div class="card__suit card__rank--bottom">A</div>
+            </div>
+          </div>
+
+          <div class="col-2">Player 1</div>
+        </div>
       </div>
-    </div>
 
-    <div id="player2">
-      <div class="button">
+      <div id="player2" class="row">
+        <div class="col-offset-3">
+          <div class="col-2">
+            <p>Player 2</p>
+            <button>DRAW</button>
+          </div>
 
-      </div>
-      <div class="face-up-card">
+          <div class="col-2">
+            <div class="card card--face-up">
+              <div class="card__rank card__rank--top">K</div>
+              <div class="card__suit card__suit--top">&spades;</div>
+              <img src="https://raw.githubusercontent.com/aaronpanch/guerre/master/app/images/logo_light.png" class="card__logo" />
+              <div class="card__rank card__suit--bottom">&spades;</div>
+              <div class="card__suit card__rank--bottom">K</div>
+            </div>
+          </div>
 
-      </div>
-      <div class="face-down-card">
+          <div class="col-2">
+            <div class="card card--face-down">
+              <img src="https://raw.githubusercontent.com/aaronpanch/guerre/master/app/images/logo_dark.png" class="card__logo" />
+            </div>
+          </div>
 
+        </div>
       </div>
     </div>
 
